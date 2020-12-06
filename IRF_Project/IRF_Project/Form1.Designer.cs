@@ -1,6 +1,6 @@
 ﻿namespace IRF_Project
 {
-    partial class kezdolap
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(222, 73);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(344, 344);
-            this.panel1.TabIndex = 0;
-            // 
-            // kezdolap
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
-            this.Name = "kezdolap";
-            this.Text = "Kezdőlap";
+            this.Name = "Form1";
+            this.Text = "Első nap";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
     }
 }
-

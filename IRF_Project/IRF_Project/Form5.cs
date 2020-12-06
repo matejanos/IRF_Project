@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace IRF_Project
 {
-    public partial class kezdolap : Form
+    public partial class Form5 : Form
     {
-        public kezdolap()
+        public Form5()
         {
             InitializeComponent();
-
         }
-
     }
 }
