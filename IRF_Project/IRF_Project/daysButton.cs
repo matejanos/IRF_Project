@@ -12,7 +12,7 @@ namespace IRF_Project
     {
         public daysButton()
         {
-            Height = 50;
+            Height = 70;
             Width = Height;
             BackColor = Color.Azure;
             Font = new Font("Segoe MDL2 Assets", 12);
