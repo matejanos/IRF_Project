@@ -109,6 +109,7 @@
     <Compile Include="kezdolap.Designer.cs">
       <DependentUpon>kezdolap.cs</DependentUpon>
     </Compile>
+    <Compile Include="menus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
