@@ -43,12 +43,18 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // drink1
             // 
             this.drink1.FormattingEnabled = true;
             this.drink1.Items.AddRange(new object[] {
+            "Víz",
+            "Gyümölcslé",
+            "Cola",
+            "Sör",
+            "Bor",
             "Víz",
             "Gyümölcslé",
             "Cola",
@@ -180,11 +186,23 @@
             this.textBox6.Size = new System.Drawing.Size(195, 26);
             this.textBox6.TabIndex = 22;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 20F);
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(687, 330);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 90);
+            this.button1.TabIndex = 38;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -224,5 +242,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button button1;
     }
 }

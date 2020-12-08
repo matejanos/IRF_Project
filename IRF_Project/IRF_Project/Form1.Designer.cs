@@ -35,7 +35,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.drink1 = new IRF_Project.drink();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -43,6 +42,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.drink1 = new IRF_Project.drink();
             this.SuspendLayout();
             // 
             // label1
@@ -102,14 +103,6 @@
             this.textBox3.Size = new System.Drawing.Size(280, 26);
             this.textBox3.TabIndex = 6;
             // 
-            // drink1
-            // 
-            this.drink1.FormattingEnabled = true;
-            this.drink1.Location = new System.Drawing.Point(409, 192);
-            this.drink1.Name = "drink1";
-            this.drink1.Size = new System.Drawing.Size(280, 28);
-            this.drink1.TabIndex = 7;
-            // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(311, 402);
@@ -168,11 +161,63 @@
             this.label5.TabIndex = 30;
             this.label5.Text = "Szállítási adatok kitöltése:";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 20F);
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(675, 338);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 90);
+            this.button1.TabIndex = 37;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // drink1
+            // 
+            this.drink1.FormattingEnabled = true;
+            this.drink1.Items.AddRange(new object[] {
+            "Víz",
+            "Gyümölcslé",
+            "Cola",
+            "Sör",
+            "Bor",
+            "Víz",
+            "Gyümölcslé",
+            "Cola",
+            "Sör",
+            "Bor",
+            "Víz",
+            "Gyümölcslé",
+            "Cola",
+            "Sör",
+            "Bor",
+            "Víz",
+            "Gyümölcslé",
+            "Cola",
+            "Sör",
+            "Bor",
+            "Víz",
+            "Gyümölcslé",
+            "Cola",
+            "Sör",
+            "Bor",
+            "Víz",
+            "Gyümölcslé",
+            "Cola",
+            "Sör",
+            "Bor"});
+            this.drink1.Location = new System.Drawing.Point(409, 192);
+            this.drink1.Name = "drink1";
+            this.drink1.Size = new System.Drawing.Size(280, 28);
+            this.drink1.TabIndex = 7;
+            this.drink1.Text = "Semmi";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -212,5 +257,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
     }
 }

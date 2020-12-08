@@ -19,6 +19,7 @@ namespace IRF_Project
             InitializeComponent();
             xmlBeolvasas();
             linq();
+            button1.Text = "\uEA5E";
         }
 
         private void linq()

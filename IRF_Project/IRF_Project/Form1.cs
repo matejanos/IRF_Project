@@ -19,6 +19,7 @@ namespace IRF_Project
             InitializeComponent();
             xmlBeolvasas();
             linq();
+            button1.Text = "\uEA5E";
         }
 
         private void linq()
@@ -53,5 +54,7 @@ namespace IRF_Project
                 menu.ID = int.Parse(element.InnerText);
             }
         }
+
+      
     }
 }
