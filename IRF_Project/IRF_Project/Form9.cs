@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,6 +56,49 @@ namespace IRF_Project
             }
         }
 
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            csvWriter();
+        }
+
+        private void csvWriter()
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.InitialDirectory = Application.StartupPath;
+            sfd.Filter = "Rendelés (*.csv)|*.csv";
+            sfd.DefaultExt = "csv";
+            sfd.AddExtension = true;
+            if (sfd.ShowDialog() != DialogResult.OK) return;
+            using (StreamWriter sw = new StreamWriter(sfd.FileName, false, Encoding.UTF8))
+            {
+                sw.Write("Leves");
+                sw.Write(";");
+                sw.Write("Főétel");
+                sw.Write(";");
+                sw.Write("Desszert");
+                sw.Write(";");
+                sw.Write("Ital");
+                sw.Write(";");
+                sw.Write("Város");
+                sw.Write(";");
+                sw.Write("Utca");
+                sw.Write(";");
+                sw.Write("Házszám:");
+                sw.WriteLine();
+                sw.Write(textBox1.Text);
+                sw.Write(";");
+                sw.Write(textBox2.Text);
+                sw.Write(";");
+                sw.Write(textBox3.Text);
+                sw.Write(";");
+                sw.Write(drink1.Text);
+                sw.Write(";");
+                sw.Write(textBox4.Text);
+                sw.Write(";");
+                sw.Write(textBox5.Text);
+                sw.Write(";");
+                sw.Write(textBox6.Text);
+            }
+        }
     }
 }

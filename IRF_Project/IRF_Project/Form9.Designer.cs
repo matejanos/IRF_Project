@@ -49,22 +49,6 @@
             // drink1
             // 
             this.drink1.FormattingEnabled = true;
-            this.drink1.Items.AddRange(new object[] {
-            "Víz",
-            "Gyümölcslé",
-            "Cola",
-            "Sör",
-            "Bor",
-            "Víz",
-            "Gyümölcslé",
-            "Cola",
-            "Sör",
-            "Bor",
-            "Víz",
-            "Gyümölcslé",
-            "Cola",
-            "Sör",
-            "Bor"});
             this.drink1.Location = new System.Drawing.Point(393, 200);
             this.drink1.Name = "drink1";
             this.drink1.Size = new System.Drawing.Size(280, 28);
@@ -196,6 +180,7 @@
             this.button1.Size = new System.Drawing.Size(90, 90);
             this.button1.TabIndex = 38;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form9
             // 
