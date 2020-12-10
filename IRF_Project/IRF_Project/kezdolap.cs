@@ -26,8 +26,8 @@ namespace IRF_Project
                 for (int col = 0; col < 7; col++)
                 {
                     daysButton db = new daysButton();
-                    db.Left = col * db.Width + (int)(Math.Floor((double)(col / 3)));
-                    db.Top = row * db.Height + (int)(Math.Floor((double)(row / 3)));
+                    db.Left = col * db.Width;
+                    db.Top = row * db.Height;
 
                     if (qw % 7 == 0)
                     {
