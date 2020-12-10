@@ -1,0 +1,16 @@
+﻿<etlap>
+<menu leves="Bableves" foetel="Bolognai" desszert="Mézeskalács">1</menu>
+  <menu leves="Borsóleves" foetel="Lecsó" desszert="Somlói">2</menu>
+  <menu leves="Almaleves" foetel="Bécsi szelet hasáb burgonyával" desszert="Csoki">3</menu>
+  <menu leves="Húsleves" foetel="Pizza" desszert="Mákos guba">4</menu>
+  <menu leves="Paradicsomleves" foetel="Gyros" desszert="Krémes">5</menu>
+  <menu leves="Sajtleves" foetel="Hotdog" desszert="Madártej">6</menu>
+  <menu leves="Meggyleves" foetel="Brassói" desszert="Torta">7</menu>
+  <menu leves="Gulyásleves" foetel="Lasagne" desszert="Palacsinta">8</menu>
+  <menu leves="Lencseleves" foetel="krumplifőzelék" desszert="Fánk">9</menu>
+    <menu leves="Halászlé" foetel="Svéd húsgolyó" desszert="Túrógomboc">10</menu>
+  <menu leves="Tésztaleves" foetel="Hamburger" desszert="Rétes">11</menu>
+  <menu leves="Barackkrémleves" foetel="Túrós csusza" desszert="Gesztenyepüré">12</menu>
+  <menu leves="Zöldbableves" foetel="Rántott camembert" desszert="Bejgli">13</menu>
+  <menu leves="Gombaleves" foetel="Hortobágyi húsos palacsinta" desszert="Zserbó">14</menu>
+</etlap>
