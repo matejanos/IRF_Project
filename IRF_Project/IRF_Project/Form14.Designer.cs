@@ -1,6 +1,6 @@
 ﻿namespace IRF_Project
 {
-    partial class Form5
+    partial class Form14
     {
         /// <summary>
         /// Required designer variable.
@@ -57,7 +57,7 @@
             this.button1.Size = new System.Drawing.Size(90, 90);
             this.button1.TabIndex = 53;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox6
             // 
@@ -214,7 +214,7 @@
             this.label1.TabIndex = 38;
             this.label1.Text = "Leves:";
             // 
-            // Form5
+            // Form14
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -236,8 +236,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form5";
-            this.Text = "Ötödik nap";
+            this.Name = "Form14";
+            this.Text = "Tizennegyedik nap";
             this.ResumeLayout(false);
             this.PerformLayout();
 

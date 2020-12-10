@@ -12,33 +12,16 @@ using System.Xml;
 
 namespace IRF_Project
 {
-    public partial class Form4 : Form
+    public partial class Form14 : Form
     {
         List<menus> menuList = new List<menus>();
-        public Form4()
+        public Form14()
         {
             InitializeComponent();
             xmlBeolvasas();
             linq();
             button1.Text = "\uEA5E";
-        }
 
-        private void linq()
-        {
-            var resultL = from d in menuList
-                          where d.ID == 4
-                          select d.Leves.ToString();
-            textBox1.Text = resultL.FirstOrDefault();
-
-            var resultF = from f in menuList
-                          where f.ID == 4
-                          select f.Foetel.ToString();
-            textBox2.Text = resultF.FirstOrDefault();
-
-            var resultD = from e in menuList
-                          where e.ID == 4
-                          select e.Desszert.ToString();
-            textBox3.Text = resultD.FirstOrDefault();
         }
 
         private void xmlBeolvasas()
@@ -55,7 +38,26 @@ namespace IRF_Project
                 menu.ID = int.Parse(element.InnerText);
             }
         }
-        private void button1_Click_1(object sender, EventArgs e)
+
+        private void linq()
+        {
+            var resultL = from d in menuList
+                          where d.ID == 14
+                          select d.Leves.ToString();
+            textBox1.Text = resultL.FirstOrDefault();
+
+            var resultF = from f in menuList
+                          where f.ID == 14
+                          select f.Foetel.ToString();
+            textBox2.Text = resultF.FirstOrDefault();
+
+            var resultD = from e in menuList
+                          where e.ID == 14
+                          select e.Desszert.ToString();
+            textBox3.Text = resultD.FirstOrDefault();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             csvWriter();
         }

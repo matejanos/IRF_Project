@@ -1,6 +1,6 @@
 ﻿namespace IRF_Project
 {
-    partial class Form5
+    partial class Form10
     {
         /// <summary>
         /// Required designer variable.
@@ -214,7 +214,7 @@
             this.label1.TabIndex = 38;
             this.label1.Text = "Leves:";
             // 
-            // Form5
+            // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -236,8 +236,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form5";
-            this.Text = "Ötödik nap";
+            this.Name = "Form10";
+            this.Text = "Tizedik nap";
             this.ResumeLayout(false);
             this.PerformLayout();
 

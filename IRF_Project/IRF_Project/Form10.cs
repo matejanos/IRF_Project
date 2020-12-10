@@ -12,10 +12,10 @@ using System.Xml;
 
 namespace IRF_Project
 {
-    public partial class Form4 : Form
+    public partial class Form10 : Form
     {
         List<menus> menuList = new List<menus>();
-        public Form4()
+        public Form10()
         {
             InitializeComponent();
             xmlBeolvasas();
@@ -26,17 +26,17 @@ namespace IRF_Project
         private void linq()
         {
             var resultL = from d in menuList
-                          where d.ID == 4
+                          where d.ID == 10
                           select d.Leves.ToString();
             textBox1.Text = resultL.FirstOrDefault();
 
             var resultF = from f in menuList
-                          where f.ID == 4
+                          where f.ID == 10
                           select f.Foetel.ToString();
             textBox2.Text = resultF.FirstOrDefault();
 
             var resultD = from e in menuList
-                          where e.ID == 4
+                          where e.ID == 10
                           select e.Desszert.ToString();
             textBox3.Text = resultD.FirstOrDefault();
         }

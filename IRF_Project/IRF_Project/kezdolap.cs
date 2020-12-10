@@ -13,35 +13,35 @@ namespace IRF_Project
 {
     public partial class kezdolap : Form
     {
-        List<menus> menuList = new List<menus>();
+        //List<menus> menuList = new List<menus>();
         public kezdolap()
         {
             InitializeComponent();
             gombracs();
-            xmlBeolvasas();
+            //xmlBeolvasas();
         }
 
-        private void xmlBeolvasas()
-        {
-            XmlDocument menus = new XmlDocument();
-            menus.Load("etlap.xml");
-            foreach (XmlElement element in menus.DocumentElement)
-            {
-                var menu = new menus();
-                menuList.Add(menu);
-                menu.Leves = element.Attributes["leves"].Value;
-                menu.Foetel = element.Attributes["foetel"].Value;
-                menu.Desszert = element.Attributes["desszert"].Value;
-                menu.ID = int.Parse(element.InnerText);
-            }
-        }
+        //private void xmlBeolvasas()
+        //{
+        //    XmlDocument menus = new XmlDocument();
+        //    menus.Load("etlap.xml");
+        //    foreach (XmlElement element in menus.DocumentElement)
+        //    {
+        //        var menu = new menus();
+        //        menuList.Add(menu);
+        //        menu.Leves = element.Attributes["leves"].Value;
+        //        menu.Foetel = element.Attributes["foetel"].Value;
+        //        menu.Desszert = element.Attributes["desszert"].Value;
+        //        menu.ID = int.Parse(element.InnerText);
+        //    }
+        //}
 
         private void gombracs()
         {
             int qw = 1;
-            for (int row = 0; row < 3; row++)
+            for (int row = 0; row < 2; row++)
             {
-                for (int col = 0; col < 3; col++)
+                for (int col = 0; col < 7; col++)
                 {
                     daysButton db = new daysButton();
                     db.Left = col * db.Width + (int)(Math.Floor((double)(col / 3)));
@@ -54,13 +54,22 @@ namespace IRF_Project
                         db.Click += new EventHandler(this.button_click);
                         panel1.Controls.Add(db);
                     }
-                    else if (qw % 6 == 0)
+                    else if (qw == 6)
                     {
                         db.BackColor = Color.Blue;
                         db.Name = qw.ToString();
                         db.Click += new EventHandler(this.button_click);
                         panel1.Controls.Add(db);
                     }
+                   else if (qw == 13)
+                    {
+                        db.BackColor = Color.Blue;
+                        db.Name = qw.ToString();
+                        db.Click += new EventHandler(this.button_click);
+                        panel1.Controls.Add(db);
+                    }
+
+
                     else
                     {
                         db.Name = qw.ToString();
@@ -74,6 +83,11 @@ namespace IRF_Project
         }
 
         void button_click(object sender, EventArgs e)
+        {
+            formOpening(sender);
+        }
+
+        private static void formOpening(object sender)
         {
             Button btn = sender as Button;
             if (btn.Name == "1")
@@ -120,6 +134,31 @@ namespace IRF_Project
             {
                 Form9 f9 = new Form9();
                 f9.Show();
+            }
+            if (btn.Name == "10")
+            {
+                Form10 f10 = new Form10();
+                f10.Show();
+            }
+            if (btn.Name == "11")
+            {
+                Form11 f11 = new Form11();
+                f11.Show();
+            }
+            if (btn.Name == "12")
+            {
+                Form12 f12 = new Form12();
+                f12.Show();
+            }
+            if (btn.Name == "13")
+            {
+                Form13 f13 = new Form13();
+                f13.Show();
+            }
+            if (btn.Name == "14")
+            {
+                Form14 f14 = new Form14();
+                f14.Show();
             }
         }
     }
