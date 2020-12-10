@@ -13,29 +13,11 @@ namespace IRF_Project
 {
     public partial class kezdolap : Form
     {
-        //List<menus> menuList = new List<menus>();
         public kezdolap()
         {
             InitializeComponent();
             gombracs();
-            //xmlBeolvasas();
-        }
-
-        //private void xmlBeolvasas()
-        //{
-        //    XmlDocument menus = new XmlDocument();
-        //    menus.Load("etlap.xml");
-        //    foreach (XmlElement element in menus.DocumentElement)
-        //    {
-        //        var menu = new menus();
-        //        menuList.Add(menu);
-        //        menu.Leves = element.Attributes["leves"].Value;
-        //        menu.Foetel = element.Attributes["foetel"].Value;
-        //        menu.Desszert = element.Attributes["desszert"].Value;
-        //        menu.ID = int.Parse(element.InnerText);
-        //    }
-        //}
-
+        }      
         private void gombracs()
         {
             int qw = 1;
@@ -81,12 +63,10 @@ namespace IRF_Project
 
             }
         }
-
         void button_click(object sender, EventArgs e)
         {
             formOpening(sender);
         }
-
         private static void formOpening(object sender)
         {
             Button btn = sender as Button;
