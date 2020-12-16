@@ -57,7 +57,28 @@ namespace IRF_Project
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
-            csvWriter();
+            errorProvider();            
+        }
+
+        private void errorProvider()
+        {
+            if (textBox4.Text == "")
+            {
+                errorProvider1.SetError(textBox4, "Töltsd ki!");
+            }
+            else if (textBox5.Text == "")
+            {
+                errorProvider1.SetError(textBox5, "Töltsd ki!");
+            }
+            else if (textBox6.Text == "")
+            {
+                errorProvider1.SetError(textBox6, "Töltsd ki!");
+            }
+            else
+            {
+                errorProvider1.Clear();
+                csvWriter();
+            }
         }
 
         private void csvWriter()
